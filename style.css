@@ -1,164 +1,237 @@
-*{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-    
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
 }
 
-.container{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: flex-start;  
-    background-color: rgba(248, 248, 248, 0.993);  
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: rgba(248, 248, 248, 0.993);
 }
-.container .section{
-    flex-basis: 28%;
+.container .section {
+  flex-basis: 28%;
 }
-.navbar{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    margin-left: 85px;
-    position: relative;
-    top: -22px;
-}
-
-.navbar h1{
-    position: relative;
-    top: -38px;
-    font-size: 30px;
-   
-    font-family: 'Libre Baskerville', serif;
+.navbar {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 85px;
+  position: relative;
+  top: -22px;
 }
 
-.navbar button{
-    background-color: #ff5370;
-    border: none;
-    color: white;
-    padding: 12px 38px;
-    font-size: 13px;
-    cursor: pointer;
-    border-radius: 28px;
-    position: relative;
-    bottom: -22px;
+.navbar h1 {
+  position: relative;
+  top: -38px;
+  font-size: 30px;
+  font-family: "Suez One", serif;
+  /* font-family: "Dela Gothic One", cursive; */
 }
 
-
-.navbar ul li{
-    padding: 16px 0px;
+.navbar button {
+  background-color: #ff5370;
+  border: none;
+  color: white;
+  padding: 12px 38px;
+  font-size: 13px;
+  cursor: pointer;
+  border-radius: 28px;
+  position: relative;
+  bottom: -22px;
 }
 
-.navbar ul li a{
-    color: rgb(97, 97, 97);
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-    opacity: 0.6;
-}
-.navbar i{
-    display: none;
-    color: rgb(255, 45, 80);
+.navbar ul li {
+  padding: 16px 0px;
 }
 
-.navbar #tag-2{
-    display: none;
+.navbar ul li a {
+  color: rgb(97, 97, 97);
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  opacity: 0.7;
 }
-@media screen and (max-width: 600px){
-    .navbar{
-        flex-direction: row;
-        height: 90px;
-        width: 100%;
-        align-items: center;
-        justify-content: space-evenly;
-        margin: 30px 0 0 0;
-    }
-    .navbar i{
-        display: block;
-    }
-    .navbar #tag-2{
-        display: block;
-    }
-    .navbar ul, button{
-        display: none;
-    }
-
-    .navbar #tag-1{
-        display: none;
-    }
+.navbar i {
+  display: none;
+  color: rgb(255, 45, 80);
 }
 
-.container .main{
-    flex-basis: 72%;
-    height: 100vh;
+.navbar #tag-2 {
+  display: none;
 }
 
-.container .main-content{
-    display: flex;
-    flex-wrap: wrap;
+.container .main {
+  flex-basis: 72%;
+  height: 100vh;
 }
 
-.main-content .banner{
-    flex-basis: 60%;
-}
-.main-content .para{
-    flex-basis: 40%;
+.container .main-content {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.main-content  h1{
-    position: relative;
-    font-size: 55px;
-    top: 120px;
-    font-family: 'Libre Baskerville', serif;
+.main-content .banner {
+  flex-basis: 60%;
 }
-.main-content .para p{
-    position: relative;
-    top: 130px;
-    font-size: 13px;
-    margin: 12px;
-    width: 160px;
-    font-family: 'Open Sans', sans-serif;
-    color: rgb(83, 83, 83);
-    opacity: 0.5;
-    line-height: 20px;
+.main-content .paragraph-box {
+  flex-basis: 40%;
+}
+
+.main-content h1 {
+  position: relative;
+  font-size: 55px;
+  top: 120px;
+  /* font-family: 'Dela Gothic One', cursive; */
+  /* font-family: "Libre Baskerville", serif; */
+  font-family: "Suez One", serif;
+}
+.main-content .paragraph-box p {
+  position: relative;
+  top: 110px;
+  font-size: 13px;
+  margin: 12px;
+  width: 160px;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(46, 46, 46);
+  opacity: 0.5;
+  line-height: 20px;
 }
 
 .food-items {
-    display: inline-flex;
+  display: inline-flex;
 }
 
 .food-items .box {
-    width: 120px;
+  width: 120px;
+  margin: 10px;
+  position: relative;
+  top: 0px;
+  padding: 0px 20px;
+  top: 50px;
+  height: 200px;
+  background-color: white;
+  border-radius: 18px;
+  box-shadow: 20px 20px 50px rgb(156, 156, 156);
+}
+.image {
+  background-color: white;
+}
+.image img {
+  width: 100%;
+  clip-path: circle();
+  cursor: pointer;
+}
+.img-name {
+  background-color: transparent;
+}
+.img-name p {
+  text-align: center;
+  background-color: transparent;
+  position: relative;
+  top: -15px;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+/* Responsive design for 600px and below*/
+@media screen and (max-width: 600px) {
+  .container {
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .container .section {
+    flex-basis: 100%;
+    height: 90px;
+  }
+  .container .main-content {
+    flex-basis: 100%;
+    flex-flow: column;
+  }
+  .container .main {
+    flex-basis: 100%;
+    flex-flow: column;
+  }
+  .navbar {
+    flex-direction: row;
+    height: 65px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    margin: 30px 0 0 0;
+  }
+  .navbar i {
+    display: block;
+  }
+  .navbar #tag-2 {
+    display: block;
+    font-size: 30px;
+    font-family: "Suez One", serif;
+  }
+  .navbar ul,
+  button {
+    display: none;
+  }
+
+  .navbar #tag-1 {
+    display: none;
+  }
+  .main-content .banner {
+    flex-direction: column;
+    flex-basis: 15%;
+    height: 80px;
+    width: 100%;
+  }
+  .main-content .banner h1 {
+    font-size: 30px;
+    position: relative;
+    top: 5px;
+    left: 40px;
+  }
+  .main-content .paragraph-box {
+    display: block;
+    order: 3;
+  }
+
+  .main-content .paragraph-box p {
+    position: relative;
+    top: 7px;
+    font-size: 13px;
+    text-align: inherit;
+    width: 85%;
+    left: 25px;
+    opacity: 0.6;
+    line-height: 20px;
+  }
+  .food-items {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: 33px;
+    order: 2;
+  }
+
+  .food-items #box-5 {
+    display: none;
+  }
+
+  .food-items .box {
+    width: 90px;
     margin: 10px;
     position: relative;
-    top: 0px;
     padding: 0px 20px;
-    top: 50px;
-    height: 200px;
-    background-color: white;
-    border-radius: 18px;
-    box-shadow:20px 20px 20px rgb(156, 156, 156);
-}
-.image{
-    background-color: white;
-}
-.image img{
-    width: 100%;
-    clip-path: circle();
-    cursor: pointer;
-}
-.img-name{
-    background-color: transparent;
-}
-.img-name p{
-    text-align: center;
-    background-color: transparent;
-    position: relative;
-    top: -15px;
-    font-weight: bold;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 13px;
-    cursor: pointer;
+    top: -22px;
+    justify-content: center;
+    align-items: center;
+    left: 25px;
+    height: 170px;
+    box-shadow: 0px 15px 50px rgb(221, 221, 221);
+  }
 }

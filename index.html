@@ -5,88 +5,117 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lorem Ipsum</title>
+    <!-- Extrenal CSS file -->
     <link rel="stylesheet" href="style.css" />
+    <!-- font awesome icons -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet"
-    
+    <!-- font styles -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-      <div class="container">
-          <div class="section">
-            <nav class="navbar">
-                <i class="fas fa-bars"></i>
-                <!-- <div class="hamburger-menu">
-                    <div class="line line-1"></div>
-                    <div class="line line-2"></div>
-                    <div class="line line-3"></div>
-                  </div> -->
-                <h1 id="tag-1">Lorem <br> Ipsum</h1>
-                <h2 id="tag-2">Lorem</h2>
-                <ul class="nav-list">
-                    <li><a style="text-decoration: line-through; text-decoration-color: #fa3757; text-decoration-style: solid;" href="">About</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Cuisine</a></li>
-                    <li><a href="">Gallery</a></li>
-                    <li><a href="">Contact</a></li>
-                    <li><a href="">Book</a></li>
-                </ul>
-                <button class="cart-btn">Cart</button>
-                <i class="fas fa-shopping-cart"></i>
-            </nav>
-          
+    <div class="container">
+      <!-- Sidebar Section -->
+      <div class="section">
+        <nav class="navbar">
+          <i class="fas fa-bars fa-2x"></i>
+          <h1 id="tag-1">
+            Lorem <br />
+            Ipsum
+          </h1>
+          <h2 id="tag-2">Lorem</h2>
+          <ul class="nav-list">
+            <li>
+              <a
+                style="
+                  text-decoration: line-through;
+                  text-decoration-color: #ff0a0a;
+                  text-decoration-style: solid;
+                "
+                href=""
+                >About</a
+              >
+            </li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Cuisine</a></li>
+            <li><a href="">Gallery</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Book</a></li>
+          </ul>
+          <button class="cart-btn">Cart</button>
+          <i class="fas fa-shopping-cart fa-2x"></i>
+        </nav>
+      </div>
+      <!-- Main section starts here -->
+      <div class="main main-content">
+        <!-- banner text -->
+        <div class="banner">
+          <h1>
+            What are you <br />
+            having for Lunch?
+          </h1>
+        </div>
+        <!-- paragraph box -->
+        <div class="paragraph-box">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa,
+            deserunt quasi? Incidunt, quaerat porro.
+          </p>
+          <p style="width: 55px; display: table">
+            <span
+              style="display: table-cell; border-bottom: 2px solid red"
+            ></span>
+          </p>
+        </div>
+        <!-- Food list -->
+        <div class="food-items">
+          <div class="box" id="box-1">
+            <div class="image"><img src="./img/tacos.jpg" alt="" /></div>
+            <div class="img-name"><p class="h-secondary">Mexican Taco</p></div>
           </div>
-          <div class="main main-content">
-            <div class="banner"><h1>What are you <br> having for Lunch?</h1></div>
-            <div class="para"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, deserunt quasi? Incidunt, quaerat porro.
-            </p></div>
-            <div class="food-items">
-              
-              <div class="box">
-                <div class="image"><img src="./img/tacos.jpg" alt=""></div>
-                <div class="img-name"><p class="h-secondary">Mexican Taco</p></div>
-              </div>
-              <div class="box">
-                <div class="image"><img src="./img/pizza.jpg" alt=""></div>
-                <div class="img-name"><p class="h-secondary">Farmhouse Pizza</p></div>
-              </div>
-              <div class="box">
-                <div class="image"><img src="./img/burger.jpg" alt=""></div>
-                <div class="img-name"><p class="h-secondary">Chicken Burger</p></div>
-              </div>
-              <div class="box">
-                <div class="image"><img src="./img/naachos.jpg" alt=""></div>
-                <div class="img-name"><p class="h-secondary">Loaded Nachos</p></div>
-              </div>
-              <div class="box">
-                <div class="image"><img src="./img/noodles.jpg" alt=""></div>
-                <div class="img-name"><p class="h-secondary">Hakka Noodles</p></div>
-              </div>
-              
-             
-              <!-- <div class="box">
-                <img src="" alt="">
-                <h2 class="h-secondary">Mexican Tacos</h2>
-              </div>
-              <div class="box">
-                <img src="" alt="">
-                <h2 class="h-secondary">Mexican Tacos</h2>
-              </div>
-              <div class="box">
-                <img src="" alt="">
-                <h2 class="h-secondary">Mexican Tacos</h2>
-              </div> -->
+          <div class="box" id="box-2">
+            <div class="image"><img src="./img/pizza.jpg" alt="" /></div>
+            <div class="img-name">
+              <p class="h-secondary">Farmhouse Pizza</p>
             </div>
           </div>
-    
+          <div class="box" id="box-3">
+            <div class="image"><img src="./img/burger.jpg" alt="" /></div>
+            <div class="img-name">
+              <p class="h-secondary">Chicken Burger</p>
+            </div>
+          </div>
+          <div class="box" id="box-4">
+            <div class="image"><img src="./img/naachos.jpg" alt="" /></div>
+            <div class="img-name"><p class="h-secondary">Loaded Nachos</p></div>
+          </div>
+          <div class="box" id="box-5">
+            <div class="image"><img src="./img/noodles.jpg" alt="" /></div>
+            <div class="img-name"><p class="h-secondary">Hakka Noodles</p></div>
+          </div>
+        </div>
       </div>
-    
-      </body>
+    </div>
+  </body>
 </html>
